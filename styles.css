@@ -100,3 +100,41 @@ header {
     background: #333;
     color: #fff;
 }
+
+.experiences {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.experience {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.logo {
+    justify-self: center;
+}
+
+.logo img {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.details {
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    gap: 5px;
+}
+
+.company-name {
+    font-weight: bold;
+}
+
+.duration {
+    justify-self: end;
+    font-style: italic;
+}
