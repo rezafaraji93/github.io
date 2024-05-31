@@ -3,30 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Portfolio</title>
+    <title>Reza Faraji - Android Developer</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
             display: flex;
             flex-direction: column;
             min-height: 100vh;
+            color: #333;
         }
         header {
-            background: #333;
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
             color: #fff;
             padding: 2rem 0;
             text-align: center;
+            position: relative;
         }
         .profile-img {
             width: 150px;
             height: 150px;
             border-radius: 50%;
-            margin-top: -75px;
+            margin-top: 1rem;
             border: 5px solid #fff;
             object-fit: cover;
+            position: relative;
+            top: 30px;
         }
         .cv-button {
             margin: 1rem 0;
@@ -38,6 +42,7 @@
             padding: 0.5rem 1rem;
             border-radius: 5px;
             transition: background 0.3s ease;
+            display: inline-block;
         }
         .cv-button a:hover {
             background: #0056b3;
@@ -47,18 +52,14 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 2rem;
-        }
-        .intro, .about, .experiences {
             text-align: center;
+        }
+        .about, .experiences, .projects-section {
             margin-bottom: 2rem;
         }
-        .intro h1, .about h2, .experiences h2 {
-            margin: 0;
-            font-size: 2.5rem;
-        }
-        .intro p, .about p {
-            font-size: 1.2rem;
-            color: #555;
+        .about h2, .experiences h2, .projects-section h2 {
+            font-size: 2rem;
+            color: #6a11cb;
         }
         .projects {
             display: grid;
@@ -84,12 +85,12 @@
 </head>
 <body>
     <header>
-        <img src="https://github.com/rezafaraji93/rezafaraji93.github.io/blob/main/res/my_img.jpg?raw=true" alt="Your Profile Image" class="profile-img">
-        <h1>Your Name</h1>
+        <img src="https://github.com/rezafaraji93/rezafaraji93.github.io/blob/main/res/my_img.jpg?raw=true" alt="Reza Faraji Profile Image" class="profile-img">
+        <h1>Reza Faraji</h1>
         <div class="cv-button">
             <a href="https://docs.google.com/document/d/1cENQt04fkvIj8Z3byMhU9B6kbBBxt6dSydvxumFzepA/edit?usp=sharing" target="_blank">View CV</a>
         </div>
-        <p>Android Developer | UX Designer</p>
+        <p>Android Developer</p>
     </header>
     <div class="container">
         <div class="about">
@@ -103,27 +104,26 @@
             <p><strong>Bit24 - Tehran, Iran</strong> <br>August 2022 – Present<br>Android Developer</p>
             <p><strong>Raybit - Tabriz, Iran</strong> <br>December 2020 – August 2022<br>Android Developer</p>
         </div>
-        <div class="intro">
-            <h1>Welcome to My Portfolio</h1>
-            <p>Here you can find some of my recent projects and learn more about me.</p>
-        </div>
-        <div class="projects">
-            <div class="project">
-                <h3>Project 1</h3>
-                <p>Description of Project 1.</p>
-            </div>
-            <div class="project">
-                <h3>Project 2</h3>
-                <p>Description of Project 2.</p>
-            </div>
-            <div class="project">
-                <h3>Project 3</h3>
-                <p>Description of Project 3.</p>
+        <div class="projects-section">
+            <h2>Projects</h2>
+            <div class="projects">
+                <div class="project">
+                    <h3>Project 1</h3>
+                    <p>Description of Project 1.</p>
+                </div>
+                <div class="project">
+                    <h3>Project 2</h3>
+                    <p>Description of Project 2.</p>
+                </div>
+                <div class="project">
+                    <h3>Project 3</h3>
+                    <p>Description of Project 3.</p>
+                </div>
             </div>
         </div>
     </div>
     <footer class="footer">
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
+        <p>&copy; 2024 Reza Faraji. All rights reserved.</p>
     </footer>
 </body>
 </html>
