@@ -3,34 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reza Faraji - Android Developer</title>
+    <title>Your Portfolio</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
         header {
             background: #333;
             color: #fff;
-            padding: 1rem 0;
+            padding: 2rem 0;
             text-align: center;
         }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-top: -75px;
+            border: 5px solid #fff;
+            object-fit: cover;
+        }
+        .cv-button {
+            margin: 1rem 0;
+        }
+        .cv-button a {
+            text-decoration: none;
+            color: #fff;
+            background: #007bff;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+        .cv-button a:hover {
+            background: #0056b3;
+        }
         .container {
+            flex: 1;
             max-width: 1200px;
             margin: 0 auto;
             padding: 2rem;
         }
-        .intro {
+        .intro, .about, .experiences {
             text-align: center;
             margin-bottom: 2rem;
         }
-        .intro h1 {
+        .intro h1, .about h2, .experiences h2 {
             margin: 0;
             font-size: 2.5rem;
         }
-        .intro p {
+        .intro p, .about p {
             font-size: 1.2rem;
             color: #555;
         }
@@ -58,10 +84,25 @@
 </head>
 <body>
     <header>
-        <h1>Reza Faraji</h1>
-        <p>Android Developer</p>
+        <img src="https://github.com/rezafaraji93/rezafaraji93.github.io/blob/main/res/my_img.jpg?raw=true" alt="Your Profile Image" class="profile-img">
+        <h1>Your Name</h1>
+        <div class="cv-button">
+            <a href="https://docs.google.com/document/d/1cENQt04fkvIj8Z3byMhU9B6kbBBxt6dSydvxumFzepA/edit?usp=sharing" target="_blank">View CV</a>
+        </div>
+        <p>Android Developer | UX Designer</p>
     </header>
     <div class="container">
+        <div class="about">
+            <h2>About Me</h2>
+            <p>
+                Android Developer with 6 years of experience in designing, developing, testing, and maintaining cutting-edge Android apps for e-commerce and crypto exchange industries. Proficient in Kotlin and Jetpack Compose for native Android development, with expertise in Kotlin Multiplatform (KMP) for cross-platform applications. Contributed to the development of Bit24, a flagship crypto exchange app with over 500,000 users, and achieved notable improvements in efficiency and User Satisfaction.
+            </p>
+        </div>
+        <div class="experiences">
+            <h2>Experiences</h2>
+            <p><strong>Bit24 - Tehran, Iran</strong> <br>August 2022 – Present<br>Android Developer</p>
+            <p><strong>Raybit - Tabriz, Iran</strong> <br>December 2020 – August 2022<br>Android Developer</p>
+        </div>
         <div class="intro">
             <h1>Welcome to My Portfolio</h1>
             <p>Here you can find some of my recent projects and learn more about me.</p>
