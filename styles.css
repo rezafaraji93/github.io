@@ -17,6 +17,15 @@ header {
     position: relative;
 }
 
+header p {
+    margin-top: 0;
+    margin-bottom: 32px;
+}
+
+header h1 {
+    margin-bottom: 0;
+}
+
 .profile-img {
     width: 150px;
     height: 150px;
@@ -24,8 +33,7 @@ header {
     margin-top: 1rem;
     border: 5px solid #fff;
     object-fit: cover;
-    position: relative;
-    top: 30px;
+    margin-top: 30px;
 }
 
 .cv-button {
@@ -50,23 +58,23 @@ header {
     flex: 1;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 2rem;
-    text-align: center;
+    padding: 16px;
 }
 
-.about, .experiences, .projects-section {
+.about, .experiences, .educations, .projects-section {
     margin-bottom: 2rem;
 }
 
-.about h2, .experiences h2, .projects-section h2 {
-    font-size: 2rem;
+.about h2, .experiences h2, .educations h2, .projects-section h2 {
+    font-size: 32px;
+    text-align: center;
     color: #6a11cb;
 }
 
 .projects {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 2rem;
+    gap: 16px;
 }
 
 .project {
@@ -101,40 +109,109 @@ header {
     color: #fff;
 }
 
-.experiences {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-}
-
 .experience {
-    display: grid;
-    grid-template-rows: auto 1fr;
-    gap: 10px;
+    /* display: flex; */
     border: 1px solid #ccc;
-    padding: 10px;
+    padding: 16px;
+    background: #fff;
+    border-radius: 8px;
+    margin-bottom: 16px;
 }
 
 .logo {
-    justify-self: center;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    /* margin: 16px; */
 }
 
 .logo img {
-    max-width: 100px;
-    max-height: 100px;
+    width: 80px;
+    height: auto;
 }
 
 .details {
-    display: grid;
-    grid-template-rows: auto auto 1fr;
     gap: 5px;
 }
 
-.company-name {
-    font-weight: bold;
+.experience ul {
+    padding: 0;
+    margin-bottom: 0;
+    list-style-position: inside;
+}
+
+.experience ul li {
+    margin-top: 4px;
+}
+
+.company-name, .duration {
+    /* font-weight: bold; */
+    font-size: 14px;
 }
 
 .duration {
-    justify-self: end;
-    font-style: italic;
+    color: #00000099;
+}
+
+.job-title {
+    font-weight: 600;
+}
+
+.links-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.links-container .link-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: red;
+}
+
+.links-container .link-container svg {
+    width: 24px;
+    height: 24px;
+    fill: #fff;
+}
+
+.link-container.linkedin {
+    background-color: #007bb5;
+}
+.link-container.github {
+    background-color: #272727;
+}
+.links-container .link-container:hover {
+    opacity: 0.7;
+}
+
+.educations .education {
+    border: 1px solid #ccc;
+    padding: 16px;
+    background: #fff;
+    border-radius: 8px;
+}
+
+.education .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.education .header h4, .education .header p {
+    margin: 0;
+}
+
+.education .header p {
+    font-size: 14px;
+}
+
+.education .detail {
+    font-size: 14px;
+    margin-bottom: 0;
 }
